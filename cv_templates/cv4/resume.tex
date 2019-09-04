@@ -1,0 +1,114 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Benjin Zhu}}\\
+	Beijing, CN $\cdot$ poodarchu@gmail.com $\cdot$ +86-18520159000 $\cdot$ https://pdc.one\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{South China University of Technology}\hfill Guangzhou, CN\\
+BS Software Engineering \textit{GPA: 3.6} \hfill Sep 2014 - Jul 2018\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Research Experience}
+\vspace{1mm}
+
+\textbf{Megvii Research} \hfill Beijing, CN\\
+\textit{Researcher} \hfill Feb 2019 | Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Object Detection
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Python \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Piper Chaf}} {\sl JAVA} \hfill http://dddd.coom\\
+A video chat app\\
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{HSHS} \hfill HackHY\\
+Recognized as \hfill feb 2011\\
+\vspace*{2mm}
+
+\ 
+\end{document}

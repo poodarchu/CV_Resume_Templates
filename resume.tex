@@ -1,0 +1,210 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Benjin Zhu}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, deep learning, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{headings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+%{\huge \name}
+% Alternatively, print name centered and bold:
+\centerline{\huge \bf \name}
+
+%\vspace{0.25in}
+
+%\begin{minipage}{0.45\linewidth}
+%  \href{http://www.unc.edu/}{University of North Carolina} \\
+%  Department of Statistics \\
+%  Smith Building \\
+%  Chapel Hill, NC 27599
+%\end{minipage}
+\begin{center}
+\begin{tabular}{lll}
+Phone: (86) 185-2015-9000 & Email: \href{mailto:poodarchu@gmail.com}{\tt poodarchu@gmail.com} & Homepage: \href{https://pdc.one/}{\tt https://www.pdc.one/} \\
+  \end{tabular}
+\end{center}
+
+\section*{Research Interests}
+3D Computer Vision in Robotics
+
+
+\section*{Education}
+\begin{itemize}
+  \item \textbf{South China University of Technology} \hfill GuangZhou, China 
+        \\ B.Eng. in Software Engineering(\textbf{Excellence Engineer Programme})\hfill Jul 2018
+        \\ First Class Honors with GPA 3.6/4.0
+\end{itemize}
+
+
+\section*{Research Experience}
+
+\begin{itemize}
+	\item \textbf{Megvii Research} \hfill Beijing, China
+          \\  Researcher \hfill Feb 2019--Present
+          \vspace{-0.1cm}
+		  \begin{itemize}
+		    \itemsep0em 
+			\item 1. Build MEGVII's 3D Object Detection Codebase; Winner of the nuScenes 3D Object Detection Challenge in WAD, CVPR 2019(First participant); Propose new 3D object detection method ViP(First author)
+			\item 2. Research on Key-point based 2D Object Detection, End-to-End NMS, Free Object Detection; Participate in COCO Detection Challenge in ICCV 2019
+			\item 3. 6D Object Pose Estimation survey, kickoff
+		  \end{itemize}
+	\vspace{0.2cm}
+	\item \textbf{DiDi AI Lab} \hfill Beijing, China
+          \\ Research Intern \hfill Jul 2017 -- Nov 2017
+		  \vspace{-0.1cm}
+		  \begin{itemize}
+		  	  \itemsep0em 
+		      \item 1. Improving CTC models' recognition accuracy on multi-source speech datasets using domain adversarial learning; Transfer methods in image domain adaptation into speech scenario, decrease recognition error by 1-2\%
+%		      \item 2. Domain Adversarial Transfer Learning
+		  \end{itemize}
+	\vspace{0.2cm}
+	\item \textbf{South China University of Technology} \hfill Guangzhou, China
+        \\ Research Assistant \hfill Oct 2015--Oct 2016
+	    \vspace{-0.1cm}
+		\begin{itemize}
+		    \itemsep0em
+			\item 1. Propose UIS to perform Social Networks User Recommendation using LDA; My role is perform ablation studies and paper writing
+			\item 2. Participate in National innovation and entrepreneurship training program 2016--2017. Investigate in music recommendation based on audio signals. My role is team leader
+			\item 3. Participate in CCF Sougou User Profile Prediction competitions. Ranked 20 among 120 teams. My role is team leader
+		\end{itemize}
+\end{itemize}
+
+\section*{Work Experience}
+\begin{itemize}
+	\item \href{https://horizon.ai/}{\textbf{Horizon Robotics}} \hfill Beijing, China
+	      \\ Algorithm Engineer - Computer Vision \hfill Apr 2018 -- Feb 2019
+	    \vspace{-0.1cm}
+		\begin{itemize}
+		    \itemsep0em
+			\item 1. In charge of Horizon's LiDAR perception project. Build full LiDAR 3D Object Detection pipeline from 0 to 1. Including data annotation rules \& tools; Model design \& training; Deployment on FPGA
+			\item 2. Work out a real-time LiDAR sensing demo which is presented in CES 2019
+		\end{itemize}          
+	\item \href{https://www.alibabagroup.com/}{\textbf{Alibaba}} \hfill Hangzhou, China
+	      \\ Intern Algorithm Engineer - Machine Learning \hfill Nov 2017 - Mar 2018
+%	      \\ Topic: UGC(Video) Recommendation; NLP
+	    \vspace{-0.1cm}
+		\begin{itemize}
+		    \itemsep0em
+			\item 1. Use ODPS(a SQL library) to perform large scale user activity analysis and video recommendation.
+			\item 2. Feature Engineering using Logistic Regression, GBDT, DNN, LDA to extract features to perform collaborative filtering
+		\end{itemize} 
+	\item 
+\end{itemize}
+
+\vspace{-1cm}
+
+
+\section*{Publications}
+\begin{itemize}
+\item \textbf{Benjin Zhu}, Bingqi Ma, ViP: A View Progressive Approach for 3D Object Detection from Point Cloud, 2019, {\it arXiv preprints} 2019.
+\item \textbf{Benjin Zhu}, Zhengkai Jiang, Xiangxin Zhou, Zeming Li, Gang Yu, Class-balanced Grouping and Sampling for Point Cloud 3D Object Detection, 2019, {\it arXiv preprints} arXiv:1908.09492.
+\item Ke Xu, Xushen Zheng, Yi Cai, Huaqing Min, Zhen Gao, \textbf{Benjin Zhu}, Haoran Xie, Tak-Lam Wong, Improving user recommendation by extracting social topics and interest topics of users in uni-directional social networks, 2018, {\it Knowledge-Based Systems} 140, 120-133.
+\end{itemize}
+
+%\section*{Projects}
+%\begin{itemize}
+%    \item keypoint object detection
+%    \item LiDAR perception
+%	\item UIS
+%	\item DeepAudioMusicRecommendation
+%	\item Gitsoo
+%\end{itemize}
+
+\section*{Presentations}
+\begin{itemize}
+	\item Presentation at Workshop on Autonomous Driving held in CVPR 2019
+\end{itemize}
+
+\section*{Honors \& Awards}
+\begin{tabular}{ll}
+    \textbf{2019} & First Place of nuScenes 3D Object Detection challenge in WAD, CVPR \\
+    \textbf{2018} & Honor Graduate \\
+	\textbf{2015 -- 2017} & SCUT School Scholarship \\
+\end{tabular}
+
+\section*{Activities}
+\begin{itemize}
+	\item Horizon's Career Training at Silicon Valley \hfill Sep 2019
+	\item Academic Visit at Carnegie Mellon University \hfill Jan 2017
+\end{itemize}
+
+\section*{Skills}
+\begin{tabular}{ll}
+	\textbf{Programming Languages} & Python, C++, JavaScript \\
+	\textbf{Deep Learning Frameworks} & PyTorch, MXNet, TensorFlow, MegDL \\
+	\textbf{Backend Frameworks} & MongoDB, MPI, CUDA \\
+	\textbf{Languages} & English, Chinese, Japanese \\
+\end{tabular}
+
+\end{document}\include{example}
